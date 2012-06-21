@@ -1,9 +1,8 @@
 package models;
 
-import views.LayoutPrincipal;
 import enums.EnumLogin;
 
-public class Usuario {
+public class UsuarioModel {
 	// viajarfacil.com/logon/logar
 	public void logar(String usuario, String senha) {
 		LoginDAO.logar(usuario, senha);
@@ -13,11 +12,11 @@ public class Usuario {
 	
 	// Atualizar a página
 	private void loginSucesso() {
-		LayoutPrincipal.INSTANCE.atualizarPaginaLogou();
+	
 	}
 	
 	// Mostrar 
 	private void mostrarErro(EnumLogin erro) {
-		LayoutPrincipal.INSTANCE.mostrarErroLogin(erro);
+		
 	}
 }
