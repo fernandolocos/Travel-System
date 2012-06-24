@@ -1,49 +1,49 @@
 package models;
 
+import models.dao.UsuarioDAO;
 import enums.EnumLogin;
 
 @SuppressWarnings("unused")
 public class UsuarioModel extends PassageiroModel {
 	
-	private final static String ID = "ID";
-	private final static String SENHA = "PASS";
-	private final static String SALT = "Sal";
-	private final static String EMAIL = "EM";
-	
+	private Long idUsuario;
+	private String senha;
+	private String sal;
+	private String email;
 	private UsuarioDAO dao;
 	
-	public void setID(Long ID) {
-		
+	public Long getIdUsuario() {
+		return idUsuario;
 	}
-	
-	public Long getID() {
-		return null;
+
+	public void setIdUsuario(Long idUsuario) {
+		this.idUsuario = idUsuario;
 	}
-	
-	public void setSenha(String senha) {
-		
-	}
-	
+
 	public String getSenha() {
-		return null;
+		return senha;
 	}
-	
-	public void setSal(String sal) {
-		
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
-	
+
 	public String getSal() {
-		return null;
+		return sal;
 	}
-	
-	public void setEmail(String email) {
-		
+
+	public void setSal(String sal) {
+		this.sal = sal;
 	}
-	
+
 	public String getEmail() {
-		return null;
+		return email;
 	}
-	
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public EnumLogin logar(String usuario, String senhaSalgada) {
 		return null;
 	}

@@ -3,7 +3,7 @@ package models;
 import java.util.Date;
 import java.util.Map;
 
-public abstract class ModelBase {
+public abstract class AbstractModelBase {
 
 	protected Map<String, Object> data;
 	

@@ -1,9 +1,14 @@
-package models;
+package models.bridge;
 
 import java.util.Date;
 import java.util.List;
 
+import models.HotelModel;
+
 public class BridgeHotel implements IBridge {
+	
+	@SuppressWarnings("unused")
+	private API api;
 
 	@Override
 	public void connectToAPI() {

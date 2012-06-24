@@ -1,42 +1,20 @@
 package models;
 
-@SuppressWarnings("unused")
-public class PassageiroModel extends ModelBase {
+public class PassageiroModel extends PessoaModel {
 
-	private final static String NOME = "NOME";
-	private final static String RG = "RG";
-	private final static String CPF = "CPF";
-	private final static String IDADE = "IDADE";
-	
-	public void setNome(String nome) {
-		
-	}
-	
-	public String getNome() {
-		return null;
-	}
-	
-	public void setRG(String RG) {
-		
-	}
+	private String RG;
+	private String CPF;
 	
 	public String getRG() {
-		return null;
+		return RG;
 	}
-	
-	public void setCPF(String CPF) {
-		
+	public void setRG(String rG) {
+		RG = rG;
 	}
-	
 	public String getCPF() {
-		return null;
+		return CPF;
 	}
-	
-	public void setIdade(int idade) {
-		
-	}
-	
-	public int getIdade() {
-		return 0;
+	public void setCPF(String cPF) {
+		CPF = cPF;
 	}
 }
