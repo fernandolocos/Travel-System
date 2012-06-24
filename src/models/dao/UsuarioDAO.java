@@ -1,4 +1,4 @@
-package models;
+package models.dao;
 
 import enums.EnumLogin;
 

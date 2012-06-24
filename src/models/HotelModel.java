@@ -2,53 +2,42 @@ package models;
 
 import java.util.List;
 
-@SuppressWarnings("unused")
-public class HotelModel extends ModelBase {
+public class HotelModel extends AbstractModelBase {
 	
-	private final static String ID = "ID";
-	private final static String IMAGENS = "IMG";
-	private final static String ENDERECO = "END";
-	private final static String ESTRELA = "STAR";
-	private final static String DESCRICAO = "DESC";
+	private Long IDHotel;
+	private List<String> imagensDoHotel;
+	private EnderecoModel endereco;
+	private int estrelas;
+	private String descricao;
 	
-	public void setHotelID(Long ID) {
-		
+	public Long getIDHotel() {
+		return IDHotel;
 	}
-	
-	public Long getHotelID() {
-		return null;
-		
+	public void setIDHotel(Long iDHotel) {
+		IDHotel = iDHotel;
 	}
-	
-	public void setHotelImages(List<String> URLS) {
-		
+	public List<String> getImagensDoHotel() {
+		return imagensDoHotel;
 	}
-	
-	public List<String> getHotelImages() {
-		return null;
+	public void setImagensDoHotel(List<String> imagensDoHotel) {
+		this.imagensDoHotel = imagensDoHotel;
 	}
-	
-	public void setHotelEndereco(Endereco endereco) {
-		
+	public EnderecoModel getEndereco() {
+		return endereco;
 	}
-	
-	public Endereco getHotelEndereco() {
-		return null;
+	public void setEndereco(EnderecoModel endereco) {
+		this.endereco = endereco;
 	}
-	
-	public void setEstrelas(int estrelas) {
-		
-	}
-	
 	public int getEstrelas() {
-		return 0;
+		return estrelas;
 	}
-	
-	public void setDescricao(String descricao) {
-		
+	public void setEstrelas(int estrelas) {
+		this.estrelas = estrelas;
 	}
-	
 	public String getDescricao() {
-		return null;
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 }
