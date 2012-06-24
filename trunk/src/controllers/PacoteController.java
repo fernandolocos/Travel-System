@@ -1,6 +1,15 @@
 package controllers;
 
+import models.PacoteModel;
+import views.PacoteView;
+
 public class PacoteController {
+	private PacoteView view;
+	
+	private PacoteModel model;
+	
+	private PagamentoController pagamentoController;
+	
 	public void comprarPacoteViagemAction()
 	{
 		
