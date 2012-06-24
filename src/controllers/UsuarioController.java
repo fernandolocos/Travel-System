@@ -1,6 +1,13 @@
 package controllers;
 
+import models.UsuarioModel;
+import views.UsuarioView;
+
 public class UsuarioController {
+	private UsuarioView view;
+	
+	private UsuarioModel model;
+	
 	public void efetuarCadastroAction()
 	{
 		
